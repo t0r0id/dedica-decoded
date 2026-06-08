@@ -15,7 +15,7 @@
   const STARTER_KIT = [
     { t: "A DeLonghi Dedica", d: "EC890 (Duo, has cold brew) or EC685. They're near-identical for espresso. ~₹12k open-box, ~₹20k new on Amazon." },
     { t: "An espresso-capable grinder", d: "The make-or-break purchase. Manual K6 / Timemore C3 ESP, or electric HiBrew G5 / Rift 64." },
-    { t: "Fresh, medium-roast beans", d: "Rest 7–10 days off roast date. Lighter roasts go sour on a Dedica." },
+    { t: "Fresh, medium-roast beans", d: "Rest 7–10 days off roast date. Medium roasts are the easiest start; lighter roasts shine once you learn the high-temp flush trick." },
     { t: "A non-pressurised basket (51mm)", d: "The real upgrade from the stock pressurised setup. Get a precision (IMS) basket if budget allows, or a bottomless portafilter that comes with one (THW / Neouza / Brewalsa). Real legends just chop their stock portafilter into a bottomless one. 🔪" },
     { t: "A WDT tool (~₹200)", d: "A few thin needles to stir & de-clump grounds. Cheap, essential." },
     { t: "An RDT spray bottle (~₹120)", d: "One spritz on beans kills static & mess." },
@@ -146,7 +146,7 @@
 
   const SYMPTOMS = [
     { label: "😖 Sour / sharp / hollow", cause: "Under-extracted (or too light a roast for the Dedica)",
-      fixes: ["<b>Grind finer</b> — the #1 fix.", "Pull a longer ratio (1:2.5–1:3) and let it run a few more seconds.", "Use fresher beans; rest 7–10 days off roast.", "Light roast? The Dedica struggles to hold 94°C — go medium/medium-dark."] },
+      fixes: ["<b>Grind finer</b> — the #1 fix.", "Pull a longer ratio (1:2.5–1:3) and let it run a few more seconds.", "Use fresher beans; rest 7–10 days off roast.", "Brewing too cool? Use the <b>high-temp flush trick</b> — a quick blank hot-water flush right before you pull, then brew immediately. Runs hotter and sweeter."] },
     { label: "😣 Bitter / harsh / dry", cause: "Over-extracted",
       fixes: ["<b>Grind coarser.</b>", "Stop the shot earlier (shorter ratio, e.g. 1:2).", "Clean the basket & portafilter — old oils taste rancid/metallic.", "Don't go below ~9 clicks on a hand grinder (and don't over-extract dark roasts)."] },
     { label: "💦 Watery / gushes / done in <15s", cause: "Too coarse, or channeling",
@@ -178,7 +178,7 @@
     { q: "How much should I spend on a grinder vs the machine?", a: "At least as much as the machine — ideally more. The grinder is the single biggest factor in cup quality after the beans. A great machine with a bad grinder makes bad espresso." },
     { q: "Is a manual grinder fine, or do I need electric?", a: "Manual (Kingrinder K6 / Timemore C3 ESP) makes excellent espresso — it's just slow and a daily arm workout. Most people upgrade to electric (HiBrew G5 / Rift 64) within months. If budget allows, buy electric now and skip the regret." },
     { q: "What ratio & dose should I start with?", a: "Double: <b>18g in → 36g out in ~25–32s</b> (1:2). Single: 9g → ~22g (1:2.5). Weigh everything; the machine's '2x' button actually pulls a lungo, so don't rely on it." },
-    { q: "Why is my espresso always sour?", a: "Two reasons: (1) grind too coarse → under-extraction → grind finer; (2) the bean is a light roast and the Dedica can't hold high temp, so it under-extracts. Start with medium / medium-dark roasts and pull a slightly longer ratio." },
+    { q: "Why is my espresso always sour?", a: "Usually under-extraction: (1) grind too coarse → grind finer; (2) shot brewing too cool — the Dedica's thermoblock cools between heating and brewing. Use the <b>high-temp flush trick</b> (a quick blank hot-water flush right before you pull, then brew immediately) to run a hotter, sweeter shot. Medium / medium-dark roasts are the most forgiving start, but the flush trick lets you run lighter roasts too." },
     { q: "Can I use pre-ground coffee?", a: "Yes, but only in the <b>pressurised</b> stock basket. In a bottomless/non-pressurised basket, stale pre-ground has no CO₂ left to build resistance, so it just gushes. Freshly ground is night-and-day better." },
     { q: "Which milk steams best for a beginner?", a: "Lower-fat tetra-pack milk is more forgiving — <b>Amul Blue</b> or <b>Akshayakalpa</b> are group favourites. Use it cold, purge the wand first, and keep it under 65°C." },
     { q: "How long do I rest beans after roasting?", a: "7–10 days off the roast date is the sweet spot (some go 2–3 weeks for darker roasts). Then use within ~a month. To store longer, degas ~10 days then freeze in single-dose portions." },
@@ -273,7 +273,7 @@
   /* ---------- RENDER ---------- */
 
   // Ticker
-  const tickerItems = ["☕ spend on the grinder","🕳️ go bottomless","🫘 fresh beans win","💦 sour? grind finer","🧪 descale monthly","📦 film your unboxing","🥛 purge the wand","⚖️ weigh everything","🚫 lighter roast = sour","🔧 change one variable","💸 watch the sales","🐇 down the rabbit hole","🤡 it's a scam (we bought it anyway)"];
+  const tickerItems = ["☕ spend on the grinder","🕳️ go bottomless","🫘 fresh beans win","💦 sour? grind finer","🧪 descale monthly","📦 film your unboxing","🥛 purge the wand","⚖️ weigh everything","🌡️ flush hot, brew fast","🔧 change one variable","💸 watch the sales","🐇 down the rabbit hole","🤡 it's a scam (we bought it anyway)"];
   const tk = $("#tickerTrack");
   if (tk) {
     const span = el("span", null, tickerItems.join(" &nbsp;•&nbsp; ") + " &nbsp;•&nbsp; ");
