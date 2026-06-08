@@ -273,6 +273,36 @@ figure figcaption{font-size:.78rem;color:var(--cream-dim);padding:9px 12px;font-
 .yt-grid .card .yt-by{font-size:.85rem;color:var(--orange);font-weight:700}
 .seller-grid .card .seller-type{font-size:.72rem;text-transform:uppercase;letter-spacing:.5px;color:var(--cream-dim)}
 
+/* OPEN-BOX VERDICT / POLL */
+.openbox-verdict{margin-top:26px;background:linear-gradient(180deg,rgba(127,209,174,.10),rgba(232,163,97,.06));
+  border:1px solid var(--mint);border-radius:var(--r);padding:24px}
+.ov-head{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.ov-emoji{font-size:1.8rem}
+.ov-head h3{font-size:1.4rem;color:var(--mint)}
+.openbox-verdict > p{color:var(--cream-dim);max-width:70ch}
+.poll{display:flex;flex-direction:column;gap:12px;margin:18px 0}
+.poll-row{display:grid;grid-template-columns:240px 1fr;gap:14px;align-items:center}
+.poll-label{font-size:.9rem;font-weight:600;color:var(--cream)}
+.poll-bar{background:#160e07;border:1px solid var(--line);border-radius:99px;height:26px;overflow:hidden}
+.poll-fill{height:100%;background:linear-gradient(90deg,var(--mint),#5fae8b);color:#0c2a1f;font-weight:700;
+  font-size:.78rem;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;border-radius:99px;
+  white-space:nowrap;animation:pollgrow 1s ease-out}
+.poll-fill.alt{background:linear-gradient(90deg,#c87f3e,#e8a361);color:#1a120b}
+@keyframes pollgrow{from{width:0!important}}
+.ov-list{margin-top:6px}
+.ov-list li::before{content:""}
+.ov-list li{padding-left:0}
+
+/* VIDEO FEATURE */
+.video-feature{display:flex;align-items:center;gap:18px;background:var(--card);border:1px solid var(--orange);
+  border-radius:var(--r);padding:18px 22px;margin-bottom:24px;transition:.2s}
+.video-feature:hover{transform:translateY(-3px);box-shadow:var(--shadow);background:#36230f}
+.vf-play{flex-shrink:0;width:48px;height:48px;border-radius:50%;background:var(--orange);color:#1a120b;
+  display:grid;place-items:center;font-size:1.2rem;padding-left:3px}
+.vf-text{display:flex;flex-direction:column;gap:4px}
+.vf-text b{color:var(--cream);font-size:1.05rem;font-family:'Fraunces',serif}
+.vf-text span{color:var(--cream-dim);font-size:.9rem}
+
 /* GALLERY */
 .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
 .gallery figure{border-radius:14px;overflow:hidden;border:2px solid var(--line);background:var(--card);transition:.2s}
@@ -310,6 +340,7 @@ figure figcaption{font-size:.78rem;color:var(--cream-dim);padding:9px 12px;font-
   .checklist-side{position:static}
   .symptom-chips{flex-direction:row;flex-wrap:wrap}
   .symptom{flex:1 1 140px}
+  .poll-row{grid-template-columns:1fr;gap:6px}
 }
 @media (max-width:680px){
   .nav-links{position:fixed;inset:62px 0 auto 0;flex-direction:column;background:rgba(20,13,8,.98);
