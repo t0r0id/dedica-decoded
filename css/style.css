@@ -94,6 +94,8 @@ h1,h2,h3{font-family:'Fraunces',serif;font-weight:900;line-height:1.04;letter-sp
 .btn-primary:hover{background:var(--orange);transform:translateY(-2px)}
 .btn-ghost{background:transparent;border-color:var(--line);color:var(--cream)}
 .btn-ghost:hover{border-color:var(--crema);color:var(--crema);transform:translateY(-2px)}
+.btn-whatsapp{background:#25D366;color:#06301a;box-shadow:0 8px 22px -8px #25D366}
+.btn-whatsapp:hover{background:#1ebe5a;transform:translateY(-2px)}
 .btn-tiny{padding:6px 14px;font-size:.78rem}
 .hero-stats{display:flex;gap:26px;flex-wrap:wrap}
 .hero-stats div{display:flex;flex-direction:column}
