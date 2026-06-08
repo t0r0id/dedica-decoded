@@ -523,10 +523,17 @@
 
   // Scroll progress + rabbit meter on scroll
   const prog = $("#scrollProgress");
+  const runner = $("#rabbitRunner"), runnerPct = $("#rabbitRunnerPct");
   function onScroll() {
     const h = document.documentElement;
-    const scrolled = h.scrollTop / (h.scrollHeight - h.clientHeight);
-    prog.style.width = (scrolled * 100) + "%";
+    const scrolled = Math.min(1, Math.max(0, h.scrollTop / (h.scrollHeight - h.clientHeight || 1)));
+    const pct = Math.round(scrolled * 100);
+    prog.style.width = pct + "%";
+    if (runner) {
+      runner.style.left = Math.min(94, Math.max(4, pct)) + "%";
+      runner.classList.toggle("flip", pct > 55);
+      runnerPct.textContent = pct >= 99 ? "you're all the way down 🕳️" : pct + "% down the hole";
+    }
     setRabbit(Math.round(scrolled * 92));
   }
   window.addEventListener("scroll", onScroll, { passive: true });
