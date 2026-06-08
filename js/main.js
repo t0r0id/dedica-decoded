@@ -16,7 +16,7 @@
     { t: "A DeLonghi Dedica", d: "EC890 (Duo, has cold brew) or EC685. They're near-identical for espresso. ~₹12k open-box, ~₹20k new on Amazon." },
     { t: "An espresso-capable grinder", d: "The make-or-break purchase. Manual K6 / Timemore C3 ESP, or electric HiBrew G5 / Rift 64." },
     { t: "Fresh, medium-roast beans", d: "Rest 7–10 days off roast date. Lighter roasts go sour on a Dedica." },
-    { t: "A bottomless portafilter (51mm)", d: "THW / Neouza / Brewalsa. Lets you see & fix channeling." },
+    { t: "A non-pressurised basket (51mm)", d: "The real upgrade from the stock pressurised setup. Get a precision (IMS) basket if budget allows, or a bottomless portafilter that comes with one (THW / Neouza / Brewalsa). Real legends just chop their stock portafilter into a bottomless one. 🔪" },
     { t: "A WDT tool (~₹200)", d: "A few thin needles to stir & de-clump grounds. Cheap, essential." },
     { t: "An RDT spray bottle (~₹120)", d: "One spritz on beans kills static & mess." },
     { t: "A scale with a timer", d: "Weigh dose in & shot out. Stop trusting the buttons. Hoffen ~₹1k." },
