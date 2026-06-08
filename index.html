@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dedica Decoded ☕ — The EC890 Espresso Starter Guide (India)</title>
+<meta name="description" content="The unofficial, slightly unhinged starter guide for DeLonghi Dedica EC890 / EC685 espresso in India. Grinders, beans, bottomless portafilters, dial-in, milk steaming, troubleshooting, coupon codes — distilled from a WhatsApp group of obsessed home baristas." />
+<meta name="theme-color" content="#1a120b" />
+<meta property="og:title" content="Dedica Decoded ☕ — EC890 Espresso Starter Guide (India)" />
+<meta property="og:description" content="Everything a beginner needs to start espresso on a DeLonghi Dedica in India. Built from the collective wisdom (and chaos) of a home-barista WhatsApp group." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- floating beans -->
+<div class="beans-bg" aria-hidden="true"></div>
+
+<!-- progress bar -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand">
+    <span class="brand-cup">☕</span>
+    <span class="brand-text">Dedica<span class="brand-dot">.</span>Decoded</span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#start">Start Here</a>
+    <a href="#trinity">Must-Buy</a>
+    <a href="#grinders">Grinders</a>
+    <a href="#beans">Beans</a>
+    <a href="#gear">Gear</a>
+    <a href="#dialin">Dial-In</a>
+    <a href="#fix">Fix My Shot</a>
+    <a href="#faq">FAQ</a>
+    <a href="#coupons">Coupons</a>
+    <a href="#learn">Learn</a>
+    <a href="#buy">Where to Buy</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="kicker">☕ unofficial &amp; mildly unhinged · made in India</p>
+      <h1>So you bought a <span class="hl">DeLonghi Dedica.</span><br />Welcome to the rabbit hole. 🕳️🐇</h1>
+      <p class="lede">
+        You spent ₹13,999 on a tiny espresso machine. You are about to spend
+        <em>far</em> more on grinders, baskets and beans you'll swear you needed.
+        This is the survival guide — built from a WhatsApp group of obsessed
+        Indian home baristas who learned everything the hard (and hilarious) way.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#start">Get me started →</a>
+        <a class="btn btn-ghost" href="#fix">My shot tastes weird 😖</a>
+      </div>
+      <div class="hero-stats">
+        <div><b data-count="3">3</b><span>things you actually need</span></div>
+        <div><b data-count="70">70+</b><span>baristas who suffered first</span></div>
+        <div><b data-count="51">51mm</b><span>the magic number</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <figure class="hero-photo tilt">
+        <img src="assets/img/hero-portafilter.jpg" alt="A bottomless THW portafilter with wooden handle and a precision basket on a granite counter" loading="eager" />
+        <figcaption>Exhibit A: the bottomless portafilter you'll buy in week two.</figcaption>
+      </figure>
+      <div class="rabbit-meter">
+        <label>🐇 Rabbit-hole meter</label>
+        <div class="meter-track"><div class="meter-fill" id="rabbitMeter"></div></div>
+        <small id="rabbitLabel">just a curious beginner…</small>
+      </div>
+    </div>
+  </div>
+  <a href="#start" class="scroll-hint" aria-label="Scroll down">⌄</a>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<!-- START / CHECKLIST -->
+<section id="start" class="section">
+  <div class="section-head">
+    <h2><span class="num">01</span> The 5-minute starter kit</h2>
+    <p class="sub">Tick things off as you buy them. Your progress is saved on this device. No login, no nonsense, no newsletter. 🙅</p>
+  </div>
+  <div class="checklist-wrap">
+    <div class="checklist" id="checklist"></div>
+    <aside class="checklist-side">
+      <div class="progress-ring-card">
+        <div class="big-pct" id="kitPct">0%</div>
+        <p id="kitMsg">Press a checkbox to begin your descent. 😈</p>
+        <button class="btn btn-tiny" id="resetKit">reset</button>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- TRINITY / MUST BUY -->
+<section id="trinity" class="section alt">
+  <div class="section-head">
+    <h2><span class="num">02</span> The Holy Trinity (what actually matters)</h2>
+    <p class="sub">Spend here. Everything else is jewellery. The golden rule of the group: <b>spend as much on the grinder as the machine.</b></p>
+  </div>
+  <div class="trinity">
+    <article class="trinity-card">
+      <div class="trinity-rank">#1</div>
+      <h3>🫘 Fresh beans</h3>
+      <p>The single biggest lever. Stale supermarket beans = sad espresso no matter what. Buy <b>freshly roasted</b>, rest 7–10 days off roast date, use within a month.</p>
+      <a href="#beans" class="card-link">See bean picks →</a>
+    </article>
+    <article class="trinity-card hot">
+      <div class="trinity-rank">#2</div>
+      <h3>⚙️ A real grinder</h3>
+      <p>More important than the machine itself. A good grinder turns the Dedica into a serious little espresso maker. A bad one will break your soul (and your wrist).</p>
+      <a href="#grinders" class="card-link">Find your grinder →</a>
+    </article>
+    <article class="trinity-card">
+      <div class="trinity-rank">#3</div>
+      <h3>🕳️ A bottomless portafilter</h3>
+      <p>"Step one: trash the stock portafilter. Step two: buy a bottomless one. Sorry — it's true 😓." It lets you <i>see</i> your mistakes and fix them.</p>
+      <a href="#gear" class="card-link">Baskets &amp; portafilters →</a>
+    </article>
+  </div>
+  <p class="aside-note">💡 Keep the stock <b>pressurised</b> portafilter though — it's forgiving for pre-ground coffee, guests, and the Duo's cold-brew mode.</p>
+</section>
+
+<!-- GRINDERS -->
+<section id="grinders" class="section">
+  <div class="section-head">
+    <h2><span class="num">03</span> Grinders — the real boss fight</h2>
+    <p class="sub">The Dedica needs a <b>fine, consistent, espresso-capable</b> grind. Filter grinders and "esp-capable" liars will give you sour, gushing shots. Filter by budget &amp; type.</p>
+  </div>
+  <div class="filters" id="grinderFilters">
+    <button class="chip active" data-filter="all">All</button>
+    <button class="chip" data-filter="manual">✋ Manual</button>
+    <button class="chip" data-filter="electric">🔌 Electric</button>
+    <button class="chip" data-filter="budget">💸 Budget</button>
+    <button class="chip" data-filter="endgame">🏆 End-game</button>
+    <button class="chip" data-filter="avoid">🚫 Avoid</button>
+  </div>
+  <div class="card-grid" id="grinderGrid"></div>
+</section>
+
+<!-- BEANS -->
+<section id="beans" class="section alt">
+  <div class="section-head">
+    <h2><span class="num">04</span> Beans worth your money (India)</h2>
+    <p class="sub">⚠️ <b>Lighter roasts go sour on a Dedica</b> — it can't hold high temp consistently. Start with <b>medium / medium-dark</b>. Filter by vibe:</p>
+  </div>
+  <div class="filters" id="beanFilters">
+    <button class="chip active" data-filter="all">All</button>
+    <button class="chip" data-filter="budget">💸 Budget daily</button>
+    <button class="chip" data-filter="milk">🥛 Milk drinks</button>
+    <button class="chip" data-filter="specialty">✨ Specialty</button>
+  </div>
+  <div class="card-grid bean-grid" id="beanGrid"></div>
+  <figure class="wide-photo tilt">
+    <img src="assets/img/beans-spread.jpg" alt="A spread of Indian coffee bean bags — Araku, Blue Tokai, Ozkafe barrel-aged, estate coffees" loading="lazy" />
+    <figcaption>A very normal, not-at-all-excessive amount of beans for one household.</figcaption>
+  </figure>
+</section>
+
+<!-- GEAR: portafilters, baskets, accessories -->
+<section id="gear" class="section">
+  <div class="section-head">
+    <h2><span class="num">05</span> Portafilters, baskets &amp; shiny gear</h2>
+    <p class="sub">Magic number for the Dedica: <b>51mm</b>. If a listing doesn't say "DeLonghi / Dedica / EC685 / EC890", it won't fit. Don't @ us.</p>
+  </div>
+
+  <h3 class="subhead">🕳️ Bottomless portafilters</h3>
+  <div class="card-grid" id="pfGrid"></div>
+
+  <div class="split">
+    <figure class="split-photo tilt">
+      <img src="assets/img/basket-ims-vs-generic.jpg" alt="Two espresso baskets side by side — a generic basket on the left and a precision IMS basket on the right" loading="lazy" />
+      <figcaption>Left: generic basket. Right: precision (IMS) basket — laser-cut holes, more even flow.</figcaption>
+    </figure>
+    <div class="split-text">
+      <h3 class="subhead">🧺 Baskets</h3>
+      <p>The basket matters more than the portafilter body. A precision basket (IMS-grade) gives more even extraction. But honestly: a decent grinder + fresh beans + a good-enough basket beats a fancy basket with bad grind.</p>
+      <ul class="tick-list" id="basketList"></ul>
+      <p class="aside-note">🚫 Never put a <b>pressurised</b> basket in a <b>bottomless</b> portafilter — you get foam, not crema, spraying everywhere.</p>
+    </div>
+  </div>
+
+  <h3 class="subhead">🧰 The accessory rabbit hole</h3>
+  <p class="sub">Honest ratings included. Some of this is essential. Some of it just "makes the bar look nice." 💅</p>
+  <div class="card-grid acc-grid" id="accGrid"></div>
+  <figure class="wide-photo tilt">
+    <img src="assets/img/accessories.jpg" alt="An RDT spray bottle, funnel and WDT tool alongside espresso glasses" loading="lazy" />
+    <figcaption>WDT tool + RDT spray + cute glasses. Total cost: less than one bag of fancy beans.</figcaption>
+  </figure>
+</section>
+
+<!-- DIAL IN -->
+<section id="dialin" class="section alt">
+  <div class="section-head">
+    <h2><span class="num">06</span> Dial-in: the actual recipe</h2>
+    <p class="sub">Stop trusting the buttons (the "2x" button pulls a lungo). Get a scale, weigh everything, change <b>one variable at a time</b>.</p>
+  </div>
+  <div class="recipe">
+    <div class="recipe-card">
+      <h3>🎯 The starting point</h3>
+      <table class="recipe-table">
+        <tr><th></th><th>Dose in</th><th>Shot out</th><th>Time</th><th>Ratio</th></tr>
+        <tr><td><b>Double</b></td><td>18 g</td><td>36 g</td><td>25–32 s</td><td>1:2</td></tr>
+        <tr><td><b>Single</b></td><td>9 g</td><td>~22 g</td><td>25–30 s</td><td>1:2.5</td></tr>
+        <tr><td><b>Light roast</b></td><td>18 g</td><td>45–54 g</td><td>longer</td><td>1:2.5–1:3</td></tr>
+      </table>
+      <p class="micro">Timer starts the moment you press the button (coffee-water contact), not at first drip.</p>
+    </div>
+    <ol class="recipe-steps">
+      <li><b>Weigh</b> your dose. ~17–18g fills a stock double basket nicely (with a puck screen).</li>
+      <li><b>RDT:</b> one spritz of water on the beans to kill static.</li>
+      <li><b>Grind</b> straight into the basket.</li>
+      <li><b>WDT:</b> stir with a thin needle to break clumps &amp; distribute.</li>
+      <li><b>Level &amp; tamp</b> until it stops moving. (You basically can't tamp "too hard" — you'd need a hydraulic press.)</li>
+      <li><b>Puck screen</b> on top, lock in, and pull onto a scale.</li>
+      <li><b>Taste &amp; adjust</b> → see "Fix My Shot" below. 👇</li>
+    </ol>
+  </div>
+  <figure class="puck-figure tilt">
+    <img src="assets/img/puck.jpg" alt="A spent espresso puck knocked out onto a plate" loading="lazy" />
+    <figcaption>A healthy-ish puck. If yours is soupy, it's not you… it's also a little bit you.</figcaption>
+  </figure>
+</section>
+
+<!-- FIX MY SHOT -->
+<section id="fix" class="section">
+  <div class="section-head">
+    <h2><span class="num">07</span> 🔧 Fix My Shot</h2>
+    <p class="sub">Tap what's wrong. Get the community-approved fix. Repeat until espresso. ✨</p>
+  </div>
+  <div class="diagnoser">
+    <div class="symptom-chips" id="symptomChips"></div>
+    <div class="diagnosis" id="diagnosis">
+      <p class="diag-placeholder">👆 Pick a symptom to summon wisdom.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MILK -->
+<section id="milk" class="section alt">
+  <div class="section-head">
+    <h2><span class="num">08</span> 🥛 Steaming milk on a weak little wand</h2>
+    <p class="sub">The Dedica's wand is… polite. Technique &gt; power. Here's the group consensus.</p>
+  </div>
+  <div class="milk-grid">
+    <ol class="milk-steps">
+      <li><b>Purge first.</b> Run the wand 20–30s until you get real steam pressure. 5 seconds is not enough — "an un-purged wand is useless."</li>
+      <li><b>Cold milk, right jug.</b> Chill the milk (and the pitcher in the freezer). Lower-fat tetra milk foams easier for beginners — <b>Amul Blue</b> or <b>Akshayakalpa</b> are group favourites.</li>
+      <li><b>Stretch:</b> tip just at the surface → listen for a soft "tsss… tsss" as you inject air for ~3–5s.</li>
+      <li><b>Texture:</b> submerge slightly to create a whirlpool and heat through, no more hissing.</li>
+      <li><b>Stop at ~60–65°C.</b> Above 65°C milk proteins break and it'll never be silky again (and it scalds).</li>
+    </ol>
+    <div class="milk-tips">
+      <div class="tip-pill">☕ <b>Cappuccino</b> = more foam · <b>Latte / flat white</b> = less, silkier.</div>
+      <div class="tip-pill">⚖️ ~140g milk ≈ just below the Dedica mug spout. Use ~100g for a hotter, less-milky drink.</div>
+      <div class="tip-pill">🧼 Purge &amp; wipe the wand <b>immediately</b> after every steam or it clogs.</div>
+      <figure class="milk-photo tilt">
+        <img src="assets/img/latte-tulip.jpg" alt="A latte with a tulip latte-art pattern" loading="lazy" />
+        <figcaption>Your goal. Eventually. Maybe. (It's mostly milk texture.)</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- TROUBLESHOOTING -->
+<section id="trouble" class="section">
+  <div class="section-head">
+    <h2><span class="num">09</span> 🚑 Machine troubleshooting</h2>
+    <p class="sub">The classics. Don't panic — nobody's Dedica has actually exploded. Yet.</p>
+  </div>
+  <div class="accordion" id="troubleAccordion"></div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section alt">
+  <div class="section-head">
+    <h2><span class="num">10</span> ❓ Frequently asked (loudly, daily)</h2>
+    <p class="sub">Everything newcomers ask in their first week, answered by people on their fiftieth bag of beans.</p>
+  </div>
+  <div class="accordion" id="faqAccordion"></div>
+</section>
+
+<!-- COUPONS -->
+<section id="coupons" class="section">
+  <div class="section-head">
+    <h2><span class="num">11</span> 🎟️ Coupon codes &amp; money hacks</h2>
+    <p class="sub">Tap a code to copy. Codes expire and change — if one's dead, you didn't hear it from us. 🫥</p>
+  </div>
+  <div class="coupon-grid" id="couponGrid"></div>
+  <div class="money-hacks">
+    <h3 class="subhead">💰 Group-certified money hacks</h3>
+    <ul class="tick-list">
+      <li><b>Amazon gift-card trick:</b> buy a gift card at ~11% off, pay with it + a cashback credit card (e.g. HDFC Millennia / Amazon Pay) to stack discounts on machines &amp; beans.</li>
+      <li><b>Watch the big sales:</b> Prime Day &amp; Big Billion Days drop the EC890 to ~₹13k with bank offers.</li>
+      <li><b>Open-box ≈ Amazon returns.</b> Cheaper (~₹10–12k) but <b>always film the unboxing</b> — 3 of 4 group buyers hit a defect (broken tank, dents, pump). Warranty gets honoured, but it's a hassle.</li>
+      <li><b>Buy beans by roast date, not brand hype.</b> Store pickup (Blue Tokai) = freshest.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- LEARN -->
+<section id="learn" class="section alt">
+  <div class="section-head">
+    <h2><span class="num">12</span> 📺 Learn from the legends</h2>
+    <p class="sub">Three channels will teach you 90% of what you need. The rest is reps.</p>
+  </div>
+  <div class="card-grid yt-grid" id="ytGrid"></div>
+</section>
+
+<!-- WHERE TO BUY -->
+<section id="buy" class="section">
+  <div class="section-head">
+    <h2><span class="num">13</span> 🛒 Where to buy (trusted by the group)</h2>
+    <p class="sub">India-specific. Prices wander — treat these as starting points, not gospel.</p>
+  </div>
+  <div class="card-grid seller-grid" id="sellerGrid"></div>
+  <p class="aside-note">🤔 Budget closer to ₹25k? The group's hot take: consider the <b>HiBrew H10A</b> instead — temp control, pressure gauge, stronger steam, 3 baskets in the box. "Don't buy a Dedica if you can spend 25k." But the Dedica is the better-supported, more-moddable, more-fun gateway drug.</p>
+</section>
+
+<!-- MODS / NERD -->
+<section id="mods" class="section alt">
+  <div class="section-head">
+    <h2><span class="num">14</span> 🛠️ For the incurable nerds</h2>
+    <p class="sub">When "good espresso" stops being enough and you start eyeing a soldering iron.</p>
+  </div>
+  <div class="card-grid mod-grid" id="modGrid"></div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <div class="section-head">
+    <h2><span class="num">15</span> 📸 The wall of (varying) glory</h2>
+    <p class="sub">Real cups &amp; setups from the group. Latte art is a journey, not a destination.</p>
+  </div>
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<!-- QUOTES -->
+<section id="quotes" class="section alt">
+  <div class="section-head">
+    <h2><span class="num">16</span> 💬 Wall of quotes</h2>
+    <p class="sub">Verbatim wisdom &amp; chaos from the group chat (names withheld to protect the caffeinated).</p>
+  </div>
+  <div class="quote-wall" id="quoteWall"></div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-cup">☕</span>
+      <span class="brand-text">Dedica<span class="brand-dot">.</span>Decoded</span>
+    </div>
+    <p class="footer-origin">
+      Born from a DeLonghi Dedica WhatsApp group of ~70 obsessed Indian home baristas
+      who, somewhere around message #7000, said: <i>"someone should just build a site for this."</i>
+      So here it is. 🫡
+    </p>
+    <p class="footer-disclaimer">
+      Not affiliated with DeLonghi, any roaster, retailer, or your bank. No affiliate links, no tracking,
+      no newsletter. Prices, stock &amp; coupon codes change constantly — verify before you buy.
+      Made with caffeine &amp; questionable financial decisions.
+    </p>
+    <button class="btn btn-ghost btn-tiny" id="toTop">↑ back to the top of the rabbit hole</button>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
