@@ -206,6 +206,10 @@
       link: "https://www.youtube.com/@TomsCoffeeCorner", linkLabel: "youtube.com/@TomsCoffeeCorner" },
     { name: "Daddy Got Coffee", by: "India-focused home barista", desc: "Great India-specific content — gear that's actually available here, beans you can actually buy, and beginner-friendly walkthroughs. Very relatable for the Dedica crowd.",
       link: "https://www.youtube.com/@DaddyGotCoffee", linkLabel: "youtube.com/@DaddyGotCoffee" },
+    { name: "Morgan Drinks Coffee", by: "barista comedy + sanity checks", desc: "World-class barista, world-class roaster of your spending habits. Watch when you need to laugh at yourself before buying yet another grinder. The self-aware antidote to gear obsession.",
+      link: "https://www.youtube.com/@morgandrinkscoffee", linkLabel: "youtube.com/@morgandrinkscoffee" },
+    { name: "Alternative Brewing", by: "honest gear reviews", desc: "Australian channel doing clear, no-nonsense brewer/grinder/machine comparisons. The earnest expert to balance out all the jokes — go here before you spend real money.",
+      link: "https://www.youtube.com/@AlternativeBrewing", linkLabel: "youtube.com/@AlternativeBrewing" },
   ];
 
   const SELLERS = [
@@ -269,7 +273,7 @@
   /* ---------- RENDER ---------- */
 
   // Ticker
-  const tickerItems = ["☕ spend on the grinder","🕳️ go bottomless","🫘 fresh beans win","💦 sour? grind finer","🧪 descale monthly","📦 film your unboxing","🥛 purge the wand","⚖️ weigh everything","🚫 lighter roast = sour","🔧 change one variable","💸 watch the sales","🐇 down the rabbit hole"];
+  const tickerItems = ["☕ spend on the grinder","🕳️ go bottomless","🫘 fresh beans win","💦 sour? grind finer","🧪 descale monthly","📦 film your unboxing","🥛 purge the wand","⚖️ weigh everything","🚫 lighter roast = sour","🔧 change one variable","💸 watch the sales","🐇 down the rabbit hole","🤡 it's a scam (we bought it anyway)"];
   const tk = $("#tickerTrack");
   if (tk) {
     const span = el("span", null, tickerItems.join(" &nbsp;•&nbsp; ") + " &nbsp;•&nbsp; ");
