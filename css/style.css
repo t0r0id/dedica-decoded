@@ -346,7 +346,7 @@ figure figcaption{font-size:.78rem;color:var(--cream-dim);padding:9px 12px;font-
 /* RESPONSIVE */
 @media (max-width:960px){
   .hero-grid{grid-template-columns:1fr}
-  .hero-art{order:-1;max-width:420px}
+  .hero-art{order:1;max-width:420px;margin:0 auto}
   .recipe,.milk-grid,.split,.diagnoser{grid-template-columns:1fr}
   .quote-wall{columns:2}
   .trinity{grid-template-columns:1fr}
@@ -374,6 +374,22 @@ figure figcaption{font-size:.78rem;color:var(--cream-dim);padding:9px 12px;font-
   .hero-photo img{aspect-ratio:auto;max-height:36vh}
   .wide-photo img,.split-photo img,.milk-photo img{max-height:36vh}
   .puck-figure,.shot-figure{max-width:200px;margin-left:auto;margin-right:auto}
+}
+
+/* Mobile: collapsible sections (tap a heading to expand/collapse) */
+@media (max-width:768px){
+  .section.collapsible{padding-top:0;padding-bottom:0}
+  .section.collapsible > .section-head{cursor:pointer;position:relative;margin:0;padding:20px 46px 20px 0;
+    border-top:1px solid var(--line)}
+  .section.collapsible:first-of-type > .section-head{border-top:0}
+  .section.collapsible > .section-head::after{content:"+";position:absolute;right:8px;top:50%;
+    transform:translateY(-50%);width:30px;height:30px;border:2px solid var(--crema);border-radius:50%;
+    display:grid;place-items:center;font-size:1.3rem;line-height:1;color:var(--crema);font-family:'Fraunces',serif}
+  .section.collapsible:not(.collapsed) > .section-head::after{content:"–"}
+  .section.collapsible.collapsed > *:not(.section-head){display:none!important}
+  .section.collapsible:not(.collapsed){padding-bottom:42px}
+  .section.collapsible:not(.collapsed) > .section-head{padding-bottom:6px}
+  .section.collapsible > .section-head .sub{margin-top:8px}
 }
 @media (prefers-reduced-motion: reduce){
   *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto}
