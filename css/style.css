@@ -200,6 +200,8 @@ figure figcaption{font-size:.78rem;color:var(--cream-dim);padding:9px 12px;font-
 .split-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .puck-figure{margin-top:28px;border-radius:var(--r);overflow:hidden;border:3px solid var(--line);max-width:340px;background:var(--card)}
 .puck-figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.shot-figure{margin-top:28px;border-radius:var(--r);overflow:hidden;border:3px solid var(--orange);max-width:320px;background:var(--card)}
+.shot-figure video{width:100%;display:block;aspect-ratio:478/850;object-fit:cover;background:#000}
 
 /* RECIPE */
 .recipe{display:grid;grid-template-columns:1fr 1.1fr;gap:24px;align-items:start}
@@ -352,7 +354,11 @@ figure figcaption{font-size:.78rem;color:var(--cream-dim);padding:9px 12px;font-
   .quote-wall{columns:1}
   .hero-stats{gap:18px}
   .hero-stats b{font-size:1.6rem}
-  .gallery img{height:200px}
+  .gallery img{height:170px}
+  /* keep photos from swallowing the whole viewport on phones */
+  .hero-photo img{aspect-ratio:auto;max-height:44vh}
+  .wide-photo img,.split-photo img,.milk-photo img{max-height:44vh}
+  .puck-figure,.shot-figure{max-width:230px;margin-left:auto;margin-right:auto}
 }
 @media (prefers-reduced-motion: reduce){
   *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto}

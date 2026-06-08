@@ -13,7 +13,7 @@
   /* ---------- DATA ---------- */
 
   const STARTER_KIT = [
-    { t: "A DeLonghi Dedica", d: "EC890 (Duo, has cold brew) or EC685. They're near-identical for espresso. ~₹13,999 new." },
+    { t: "A DeLonghi Dedica", d: "EC890 (Duo, has cold brew) or EC685. They're near-identical for espresso. ~₹12k open-box, ~₹20k new on Amazon." },
     { t: "An espresso-capable grinder", d: "The make-or-break purchase. Manual K6 / Timemore C3 ESP, or electric HiBrew G5 / Rift 64." },
     { t: "Fresh, medium-roast beans", d: "Rest 7–10 days off roast date. Lighter roasts go sour on a Dedica." },
     { t: "A bottomless portafilter (51mm)", d: "THW / Neouza / Brewalsa. Lets you see & fix channeling." },
@@ -46,9 +46,13 @@
       pros: ["64mm flat burrs = clarity", "Easy clean, low retention", "Burr-swappable later"], cons: ["Plastic body version can crack — pay ~5k more for metal"],
       link: "https://coffeeplus.in/products/espressa-orbit-64-home-grinder", linkLabel: "Coffee Plus (code PRE5)" },
     { name: "Turin DF54", price: "~₹27k", tags: ["electric", "endgame"], badge: ["pick", "End-game-ish"],
-      desc: "Best-looking grinder in the budget tier. 54mm flat burrs, with a titanium-coated burr option. 'Sounds like music.'",
-      pros: ["Gorgeous, sturdy, reliable", "Titanium burr option", "Excellent clarity"], cons: ["Pricey", "Larger footprint"],
-      link: "https://coffeeplus.in/", linkLabel: "Coffee Plus / Turin" },
+      desc: "Best-looking grinder in the budget tier, with a full all-metal build. 54mm flat burrs, with a titanium-coated burr option. 'Sounds like music.'",
+      pros: ["Gorgeous, sturdy all-metal build", "Titanium burr option", "Excellent clarity"], cons: ["Pricey"],
+      link: "https://coffeeplus.in/", linkLabel: "Coffee Plus" },
+    { name: "Espressa Orbit 64 Pro", price: "~₹25k", tags: ["electric", "endgame"], badge: ["pick", "All-metal flat burr"],
+      desc: "The Pro version of the Orbit 64 — same 64mm flat burrs, but with a premium all-metal (die-cast aluminium) body for durability and peace of mind. The sturdy end of the group's favourite platform.",
+      pros: ["64mm flat burrs", "All-metal die-cast body", "Single-dose, low retention"], cons: ["Pricier than the plastic Orbit"],
+      link: "https://coffeeplus.in/products/espressa-orbit-64-home-grinder", linkLabel: "Coffee Plus" },
     { name: "Baratza Encore ESP", price: "~₹14k", tags: ["electric"], badge: ["neutral", "Reliable"],
       desc: "Plastic-bodied but widely used and dependable home espresso grinder. 'Heard no complaints about it breaking.'",
       pros: ["Proven reliability", "Easy to live with"], cons: ["Plastic body", "Not single-dose-first"],
@@ -132,8 +136,8 @@
       link: "https://amzn.in/d/0bI0iOI4", linkLabel: "No-border dosing ring" },
     { name: "Knock box", price: "~₹500–1k", rating: ["neutral", "QoL"], desc: "Bonus: many people's stock basket stopped flying out on knock once they used a knock box.",
       link: "https://www.amazon.in/s?k=espresso+knock+box", linkLabel: "Search Amazon" },
-    { name: "Test-tube dosing vials", price: "~₹350 / 15", rating: ["neutral", "Good to have"], desc: "Single-dose your beans into 50ml test tubes (≈18g of medium-dark each) and freeze them. Mostly aesthetic + a tiny RDT effect from condensation — but they look fantastic on the bar. Grab a test-tube stand too.",
-      link: "https://www.amazon.in/dp/B0GCWGBBM4", linkLabel: "50ml test-tube vials" },
+    { name: "Single-dose vials", price: "~₹350 / 15", rating: ["neutral", "Good to have"], desc: "Single-dose your beans into 50ml test-tube vials (≈18g of medium-dark each) and freeze them. Mostly aesthetic + a tiny RDT effect from condensation — but they look fantastic on the bar. Pair them with a <a href=\"https://www.amazon.in/Test-Stand-holes-Moulded-Polypropylene/dp/B0DD429G18\" target=\"_blank\" rel=\"noopener\">test-tube stand ↗</a>.",
+      link: "https://www.amazon.in/dp/B0GCWGBBM4", linkLabel: "50ml vials" },
     { name: "Tamping station", price: "~₹500+ / 3D-print", rating: ["neutral", "If bottomless"], desc: "Bottomless portafilters wobble — a station holds it steady while you tamp. 3D-print it for ~₹50 in filament.",
       link: "https://www.amazon.in/s?k=51mm+tamping+station+holder", linkLabel: "Search Amazon" },
     { name: "Descaler", price: "~₹600 / 6 uses", rating: ["neutral", "Upkeep"], desc: "Aftermarket descaler is far cheaper than DeLonghi's (~₹750/use). Food-safe citric acid works too. Run the cycle ~monthly.",
@@ -162,7 +166,7 @@
     { q: "🔒 The basket gets stuck in the group head (need a knife to remove)", a: "Super common with the stock portafilter. Fixes: use a bit less coffee (keep it below the basket 'ears'); if it's stuck, run a shot and the pressure pops it off; use a puck screen; pull the portafilter slightly <b>upward</b> as you remove it; or just switch to a bottomless portafilter and the problem disappears." },
     { q: "🧪 Descaling light came on — what do I do?", a: "It's based on shot count + your water-hardness setting, roughly monthly / ~100 shots. Use DeLonghi descaler (~₹750) or aftermarket (~₹600 for six), or food-safe citric acid. The Dedica has <b>no 3-way valve and no blind basket</b>, so you can't back-flush — just run the descale cycle. Don't touch the liquid bare-handed." },
     { q: "💧 Set water hardness?", a: "Long-press the steam button ~10s to enter settings (levels 1–3, higher = harder water). If you run RO/soft water, a low setting is fine. A TDS meter does <i>not</i> measure hardness — use a test strip if you have one (most boxes don't include it; buy on Amazon)." },
-    { q: "📦 Should I buy open-box (e.g. Latteholic)?", a: "<b>Yes — most of the group did, and would do it again.</b> Open-box saves you ~₹2–4k (≈₹10–12k vs ~₹14k new) and the machines are almost always basically new. Crucially, they come with the <b>full 1-year warranty</b>, and in the few cases that went wrong, the seller honoured it. The honest risk: a couple of members got a cracked water tank / a dent / one pump failure — so the catch is just to <b>film one continuous unboxing video</b> as proof. Do that, and open-box is the smart-money buy. Want zero chance of a cosmetic flaw? Buy sealed/new." },
+    { q: "📦 Should I buy open-box (e.g. Latteholic)?", a: "<b>Yes — most of the group did, and would do it again.</b> Open-box saves you ~₹8k (≈₹12k open-box vs ~₹20k new on Amazon — sometimes 10k+) and the machines are almost always basically new. Crucially, they come with the <b>full 1-year warranty</b>, and in the few cases that went wrong, the seller honoured it. The honest risk: a couple of members got a cracked water tank / a dent / one pump failure — so the catch is just to <b>film one continuous unboxing video</b> as proof. Do that, and open-box is the smart-money buy. Want zero chance of a cosmetic flaw? Buy sealed/new." },
     { q: "🚰 The water tank cracked / I need a spare part", a: "Tanks are fragile and crack in transit. A replacement tank runs ~₹1–1.5k (don't believe inflated ₹5k Amazon listings; ask the seller). Spare parts for EC680/685 are at pgservice.cc. Do NOT patch a tank with super-glue — it's not food-safe." },
     { q: "🫗 Steam wand has milk buildup / weak steam", a: "Purge & wipe the wand immediately after every steam. For buildup, soak the tip and clear the holes with a pin. The EC685's tiny wand is weak by design — some people upgrade to a Rancilio-style wand (a mod), but technique fixes most of it." },
     { q: "🧱 My THW portafilter chipped/broke", a: "Usually from grinding super fine + over-pressure, sometimes when reseating the rubber gasket. The current stock is reportedly more robust; most users report theirs is solid. Don't force a too-fine grind into a naked basket." },
@@ -205,7 +209,7 @@
   ];
 
   const SELLERS = [
-    { name: "Latteholic", type: "Machines (new + open-box)", desc: "The trusted India distributor (also fulfils delonghi.co.in). EC890 ~₹13,999 new, ~₹10–12k open-box — and open-box still carries the full 1-year warranty. The group's go-to. Just film your unboxing for open-box and you're set.",
+    { name: "Latteholic", type: "Machines (new + open-box)", desc: "The trusted India distributor (also fulfils delonghi.co.in). EC890 ~₹20k new (Amazon), ~₹12k open-box (10k+ on a good day) — and open-box still carries the full 1-year warranty. The group's go-to. Just film your unboxing for open-box and you're set.",
       link: "https://latteholic.com/", linkLabel: "latteholic.com" },
     { name: "DeLonghi India (official)", type: "Machines", desc: "Official site for the Dedica Duo EC890. Ships via Latteholic. Compare its price with sales before buying.",
       link: "https://delonghi.co.in/", linkLabel: "delonghi.co.in" },
@@ -244,7 +248,6 @@
     { src: "assets/img/setup-corner.jpg", cap: "A tidy little Dedica + grinder corner." },
     { src: "assets/img/latte-attempt.jpg", cap: "Latte art is a journey. This is the journey." },
     { src: "assets/img/basket-ims-vs-generic.jpg", cap: "Generic vs IMS basket — spot the precision." },
-    { src: "assets/img/puck.jpg", cap: "A knocked-out puck, post-shot." },
   ];
 
   const QUOTES = [
