@@ -606,40 +606,4 @@
     });
   }, { rootMargin: "-45% 0px -50% 0px" });
   sections.forEach(s => obs.observe(s));
-
-  // Mobile: make each section collapsible (tap heading to expand/collapse)
-  const collapseMQ = matchMedia("(max-width:768px)");
-  const collSections = $$("main section.section");
-  let collapsibleInit = false;
-  function applyCollapsible() {
-    if (collapseMQ.matches) {
-      collSections.forEach(s => {
-        s.classList.add("collapsible");
-        if (!s.dataset.collWired) {
-          s.dataset.collWired = "1";
-          s.classList.add("collapsed");
-          const head = s.querySelector(".section-head");
-          if (head) head.addEventListener("click", () => s.classList.toggle("collapsed"));
-        }
-      });
-      if (!collapsibleInit) { collapsibleInit = true; collSections[0] && collSections[0].classList.remove("collapsed"); }
-    } else {
-      collSections.forEach(s => s.classList.remove("collapsible", "collapsed"));
-    }
-  }
-  applyCollapsible();
-  collapseMQ.addEventListener("change", applyCollapsible);
-
-  // Auto-expand a section when you navigate to it
-  function expandTarget(id) {
-    if (!id) return;
-    const sec = document.getElementById(id);
-    if (sec && sec.classList.contains("collapsible")) sec.classList.remove("collapsed");
-  }
-  document.addEventListener("click", e => {
-    const a = e.target.closest('a[href^="#"]');
-    if (a) { const id = a.getAttribute("href").slice(1); if (id) setTimeout(() => expandTarget(id), 0); }
-  });
-  window.addEventListener("hashchange", () => expandTarget(decodeURIComponent(location.hash.slice(1))));
-  if (location.hash) expandTarget(decodeURIComponent(location.hash.slice(1)));
 })();
